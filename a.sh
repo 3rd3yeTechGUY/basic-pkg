@@ -5,11 +5,9 @@ Clear
 echo "Press Enter To Continue"
 read a1
 
-fi
-while :
-do
 
 echo "Press 1 To  Start SMS Bomber "
+
 read ch
 
 if [ $ch -eq 1 ];then
