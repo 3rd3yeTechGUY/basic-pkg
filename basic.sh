@@ -51,7 +51,6 @@ do
 	sleep 0.1
 	ProgressBar ${number} ${_end}
 done
-printf '\nFinished!\n'
 
 figlet -f small FINISHED !!! | lolcat
 echo
