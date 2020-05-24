@@ -21,22 +21,37 @@ apt install nano -y
 apt install ruby -y
 gem install lolcat
 apt install git curl openssh openssl openssl-tool -y
-progress-bar() {
-  local duration=${1}
+# 1. Create ProgressBar function
+# 1.1 Input is currentState($1) and totalState($2)
+function ProgressBar {
+# Process data
+	let _progress=(${1}*100/${2}*100)/100
+	let _done=(${_progress}*4)/10
+	let _left=40-$_done
+# Build progressbar string lengths
+	_done=$(printf "%${_done}s")
+	_left=$(printf "%${_left}s")
 
+# 1.2 Build progressbar strings and print the ProgressBar line
+# 1.2.1 Output example:
+# 1.2.1.1 Progress : [########################################] 100%
+printf "\rProgress : [${_done// /#}${_left// /-}] ${_progress}%%"
 
-    already_done() { for ((done=0; done<$elapsed; done++)); do printf "▇"; done }
-    remaining() { for ((remain=$elapsed; remain<$duration; remain++)); do printf " "; done }
-    percentage() { printf "| %s%%" $(( (($elapsed)*100)/($duration)*100/100 )); }
-    clean_line() { printf "\r"; }
-
-  for (( elapsed=1; elapsed<=$duration; elapsed++ )); do
-      already_done; remaining; percentage
-      sleep 1
-      clean_line
-  done
-  clean_line
 }
+
+# Variables
+_start=1
+
+# This accounts as the "totalState" variable for the ProgressBar function
+_end=100
+
+# Proof of concept
+for number in $(seq ${_start} ${_end})
+do
+	sleep 0.1
+	ProgressBar ${number} ${_end}
+done
+printf '\nFinished!\n'
 
 figlet -f small FINISHED !!! | lolcat
 echo
