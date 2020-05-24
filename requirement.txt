@@ -1,11 +1,7 @@
 #!/bin/bash
 
 clear
-echo "termux basic package installation"
-echo ""
-echo ""
 echo "Press Enter To Continue"
-
 read a1
 
 pkg install git 
