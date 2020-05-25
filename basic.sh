@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-echo -e "\e[40;38;5;82m termux basic installation setup \e[0m"
+echo -e "\e[40;38;5;82m TERMUX BASIC PACKAGE INSTALLATION SETUP \e[0m"
 echo ""
 echo ""
 echo -e "\e[101m Press Enter"
@@ -13,8 +13,19 @@ pkg install python2
 termux-setup-storage
 pkg install curl
 pkg install openssh
-pkg install pkp
+pkg install php
 pkg install pip
+pip install requests
+pip2 install requests
+pip2 install mechanised
+pip2 install scaly
+pkg install nano
+pkg install whether
+pkg install nmap
+pkg install toilet
+apt install zip -y
+apt install fish -y
+pkg install python3
 apt install toilet -y
 apt install cowsay -y
 apt install nano -y
@@ -35,7 +46,7 @@ function ProgressBar {
 # 1.2 Build progressbar strings and print the ProgressBar line
 # 1.2.1 Output example:
 # 1.2.1.1 Progress : [=======================================>] 100%
-printf "\rLOADING : [${_done// /|}${_left// /}] ${_progress}%%"
+printf "\rLOADING : [${_done// /:}${_left// /}] ${_progress}%%"
 
 }
 
@@ -51,10 +62,10 @@ do
 	sleep 0.1
 	ProgressBar ${number} ${_end}
 done
-printf ''
+printf '\nSUBSCRIBE MY CHANNEL\n' 
 
 figlet -f small FINISHED !!! | lolcat
 echo
 echo -e "\e[1m Now Run bash termux...!!!"
 echo
-echo -e "\e[1m\e[32m Developed by :\e[33m Tech Cochi"
+echo -e "\e[1m\e[32m Developed by :\e[33m TECH COCHI"
