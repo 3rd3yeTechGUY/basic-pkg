@@ -6,7 +6,10 @@ echo ""
 echo ""
 echo -e "\e[101m Press Enter"
 read a1
+xdg-open https://www.youtube.com/TechCochi?sub_confirmation=1
 
+echo -e "\e[101m Press Enter"
+read a1
 pkg install git 
 pkg install python
 pkg install python2
