@@ -7,7 +7,9 @@ echo ""
 echo -e "\e[101m TECH COCHI \e[0m"
 echo -e "SUBSCRIBE MY CHANNEL"
 xdg-open https://www.youtube.com/TechCochi?sub_confirmation=1
-
+echo ""
+echo ""
+echo ""
 echo -e "\e[101m Press Enter"
 read a1
 pkg install git 
@@ -20,7 +22,7 @@ pkg install php
 pkg install pip
 pip install requests
 pip2 install requests
-pip2 install mechanised
+pip2 install mechaniser
 pip2 install scaly
 pkg install nano
 pkg install whether
@@ -49,7 +51,7 @@ function ProgressBar {
 # 1.2 Build progressbar strings and print the ProgressBar line
 # 1.2.1 Output example:
 # 1.2.1.1 Progress : [=======================================>] 100%
-printf "\r"\e[101mLOADING" : [${_done// /:}${_left// /}] ${_progress}%%"
+printf "\r"LOADING : [${_done// /:}${_left// /}] ${_progress}%%"
 
 }
 
@@ -65,10 +67,10 @@ do
 	sleep 0.1
 	ProgressBar ${number} ${_end}
 done
-printf '\nSUBSCRIBE MY CHANNEL\n' 
+printf '\nSUBSCRIBE MY CHANNEL 😘\n' 
 
 figlet -f small FINISHED | lolcat
 echo
-echo -e "\e[1m Now Run bash termux...!!!"
+echo -e "\e[1m Now Run termux...!!!"
 echo
 echo -e "\e[1m\e[32m Developed by :\e[33m TECH COCHI"
