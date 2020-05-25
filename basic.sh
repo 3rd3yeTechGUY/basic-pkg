@@ -51,7 +51,7 @@ function ProgressBar {
 # 1.2 Build progressbar strings and print the ProgressBar line
 # 1.2.1 Output example:
 # 1.2.1.1 Progress : [=======================================>] 100%
-printf "\r"LOADING : [${_done// /:}${_left// /}] ${_progress}%%"
+printf "\rLOADING : [${_done// /:}${_left// /}] ${_progress}%%"
 
 }
 
@@ -67,7 +67,7 @@ do
 	sleep 0.1
 	ProgressBar ${number} ${_end}
 done
-printf '\nSUBSCRIBE MY CHANNEL 😘\n' 
+printf '\nDONE\n' 
 
 figlet -f small FINISHED | lolcat
 echo
