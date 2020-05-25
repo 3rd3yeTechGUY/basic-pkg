@@ -64,7 +64,7 @@ do
 done
 printf '\nSUBSCRIBE MY CHANNEL\n' 
 
-figlet -f small FINISHED !!! | lolcat
+figlet -f small FINISHED | lolcat
 echo
 echo -e "\e[1m Now Run bash termux...!!!"
 echo
