@@ -15,16 +15,20 @@ read a1
 pkg install git 
 pkg install python
 pkg install python2
+pkg install python2 -y
 termux-setup-storage
 pkg install curl
 pkg install openssh
 pkg install php
 pkg install pip
+pip2 install --upgrade pip
+pip2 install requets
 pip install requests
 pip2 install requests
-pip2 install mechaniser
+pip2 install mechanize
 pip2 install scaly
 pkg install nano
+pkg install nano php -y 
 pkg install whether
 pkg install nmap
 pkg install toilet
