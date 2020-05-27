@@ -18,7 +18,7 @@
 
 * ``` pkg install git ```
 * ``` bash basic.sh ```
-
+* ``` git clone https://github.com/rixon-cochi/basic-pkg ```
 ## SUBSCRIBE MY YOUTUBE CHANNEL
 [![YouTube](https://img.shields.io/badge/youtube-TECH--COCHI-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/channel/UCdUnJ0qjDZ-psQYtgyoEl9Q)
 
